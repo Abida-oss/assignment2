@@ -283,6 +283,24 @@ h3 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  .sidebar {
+  display: inline-block;
+  margin-left: 25%;
+  height: auto;
+  width: 100%;
+  border-radius: 5%;
+  padding: 2%;
+}
+.link {
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  height: 100px;
+  width: 180px;
+  margin: 2%;
+  border: 1px solid;
+  border-radius: 15%;
+}
 
   .second {
     display: inline;
