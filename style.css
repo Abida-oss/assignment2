@@ -17,6 +17,9 @@ body {
   display: flex;
   border-radius: 5%;
   background-color: rgb(134, 13, 13);
+  animation-name: ani;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .left {
   height: 100%;
@@ -170,6 +173,14 @@ hr {
 }
 h3 {
   padding: 2%;
+}
+
+
+@keyframes ani {
+  0%   {background-color: rgb(134, 13, 13);}
+  25%  {background-color: rgba(159, 13, 13, 0.958);}
+  50%  {background-color: rgb(78, 41, 107);}
+  100% {background-color: rgb(128, 117, 0);}
 }
 
 /* laptop view */
