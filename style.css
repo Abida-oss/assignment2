@@ -1,0 +1,280 @@
+body {
+  box-sizing: border-box;
+  margin: 0%;
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  height: 80vh;
+  width: 70%;
+  display: flex;
+  border-radius: 5%;
+  background-color: rgb(134, 13, 13);
+}
+.left {
+  height: 100%;
+  width: 50%;
+  /* background-color: rgb(134, 13, 13); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0% 5%;
+  border-radius: 5% 0% 0% 5%;
+}
+h1 {
+  font-size: 3em;
+}
+p {
+  font-size: 1em;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: rgb(147, 100, 100);
+  font-size: 1.2em;
+  padding: 3%;
+  border-radius: 10%;
+}
+.src {
+  padding-left: 5px;
+}
+.right {
+  height: 100%;
+  width: 50%;
+  /* background-color: rgb(134, 13, 13); */
+  padding-right: 5%;
+  border-radius: 0% 5% 5% 0%;
+}
+.img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container1 {
+  display: flex;
+  margin: 0% 2% 2% 10%;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 5%;
+  margin-top: 1%;
+  padding: 2%;
+}
+.link {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  height: 100px;
+  width: 180px;
+  margin: 2%;
+  border: 1px solid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15%;
+  background-color: whitesmoke;
+}
+.blog {
+  background-color: rgb(147, 100, 100);
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.box {
+  border: 1px solid lightgray;
+  border-radius: 5%;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.info {
+  padding: 5%;
+}
+.submit {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 15%;
+  padding: 2% 5%;
+}
+.design {
+  font-size: 1.5em;
+}
+.icon {
+  padding-left: 10%;
+}
+
+
+.main1 {
+  display: grid;
+  gap: 2%;
+  grid-template-columns: repeat(3, 1fr);
+}
+.box1 {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 5%;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.p1 {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+.flag-con {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 5%;
+}
+.flag {
+  padding: 5%;
+}
+
+footer {
+  background-color: brown;
+}
+hr {
+  border: 1px solid gray;
+  width: 80%;
+}
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  padding: 2%;
+}
+
+/* laptop view */
+
+@media only screen and (min-width: 992px) {
+  .left {
+    width: 50%;
+  }
+  .right {
+    width: 50%;
+  }
+}
+
+/* tab view */
+
+@media only screen and (max-width: 991px) {
+  .left {
+    width: 70%;
+  }
+  .right {
+    width: 30%;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container1 {
+    display: grid;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5%;
+    margin-top: 1%;
+  }
+  .link {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    height: 30%;
+    width: 100%;
+    /* margin: 2%; */
+    border: 1px solid lightgray;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    background-color: white;
+  }
+  .blog{
+  background-color: rgb(147, 100, 100);
+  }
+  .second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  h3 {
+    padding: 2% 5%;
+  }
+}
+
+/* mobile view */
+
+@media only screen and (max-width: 599px) {
+  .container {
+    padding: 5%;
+  }
+  .card {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 5%;
+  }
+  #mob {
+    text-align: center;
+  }
+  .right {
+    height: 100%;
+    width: 60%;
+  }
+  #mob-img {
+    height: 100%;
+    width: 100%;
+    padding-left: 40%;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .second {
+    display: inline;
+    text-align: center;
+  }
+}
